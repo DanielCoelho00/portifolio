@@ -42,7 +42,7 @@ header{
  
 }
 
-header > .cabeçalho { 
+header .cabeçalho { 
     display:flex;
     align-items: center; /*centraliza no cabeçalho*/
     justify-content:space-between; /* manter o maximo de distancia de um elemento*/
@@ -77,7 +77,7 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
 
  /*conteudo página inical*/
 
- main .button-contato button{
+ div .botaocontato button {
     padding: 10px 25px; /* distancia da borda superior e inferior,  altura*/
     font-size: 30px; /*tamanho da fonte*/
     font-weight: 2; /*intensidade*/
@@ -87,19 +87,18 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
     border-radius: 20px; /*arredonda as bordas*/
     cursor: pointer; /*muda o estilo do cursor*/
     transition: .2s;
-    margin-top: -2%;
-    margin-left: 73%;  
-    
+    margin-top: 5%;
+   
  }
 
 
- .buton1{
+  div .buton1{
     color: rgb(255, 255, 255);
  } 
  /* cor da fonte do botão */
 
 
- main .button-contato button:hover{
+  div .botaocontato button:hover{
     box-shadow: 0px 0px 15px, inset 0px 0px 15px;
     color:#44AFFF;
     text-shadow: 0px 0px 15px ;
@@ -108,27 +107,27 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
 
 
 
- section .txt-topo-site{
- 
-    padding: 40px 4%;
-    max-width: 1350px; /* largura máxima da borda*/
+ div .txt-topo-site{
+
     color: rgb(255, 255, 255);
-    margin-top: 7%;
-    margin-left: 58%;  /*margem esquerda*/
     text-align: justify;
+    margin-top: 9%;
+    margin-right: 4%;
+    margin-left: 62%;
+    
     }
 
-    section .txt-topo-site h1 {
-        font-size: 40px; /*tamanho da fonte*/
+    div .txt-topo-site h1 {
+        font-size: 43px; /*tamanho da fonte*/
         color: #44AFFF;
         line-height: 40px; /*espaçamento entre linhas*/
         text-align: justify;
 
     }
 
-    section .txt-topo-site p{
-        font-size: 20px;
-        line-height: 20px;
+    div .txt-topo-site p{
+        font-size: 22px;/* tamaho da fonte*/
+        line-height: 25px;/*espaçamento*/
     }
 
 

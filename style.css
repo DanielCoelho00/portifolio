@@ -1,0 +1,135 @@
+
+/* ctrl + ; */
+
+/* Estilo geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* todos elementos dentro da mesma borda*/
+    
+
+    *{
+      font-family: "Jaro", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style:oblique;
+    }
+}
+ 
+body{
+  
+    width:100vw;
+    height:100vh; /* ocupa toda altura visível do seu navegador */
+    background-image: url(/imagen/woman-wearing-vr-glasses-gaming.jpg);
+    background-size:cover ; /*cobrir a tela toda*/
+    background-position:left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header .cabeçalho{
+max-width: 100%; /* largura máxima da borda*/
+margin: 0 auto; /* centralizar na tela */
+}
+
+/* estilo do cabeçalho */
+
+header{
+    
+    padding: 25px 3%; /* distanciar a logo das margens encima e embaixo*/
+ 
+}
+
+header > .cabeçalho { 
+    display:flex;
+    align-items: center; /*centraliza no cabeçalho*/
+    justify-content:space-between; /* manter o maximo de distancia de um elemento*/
+}
+
+header a{
+    color:#ffffff;
+    font-size: 1.3vw; /* tamanho da fonte*/
+    text-decoration:none; /*retira a decoração do texto*/
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header a:hover /*quando passar o mouse acontece algo*/{
+    text-shadow: 0px 0px 15px #ffffff;
+    color:#44AFFF;
+    transform:scale(1.05);/* aumenta o tamanho da fonte*/
+    
+}
+
+
+ header nav ul{
+    list-style-type: none; /*retira os bolinhas da lista ul*/
+ }
+
+ header nav ul li{
+display: inline-block;
+padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
+ }
+
+
+ /*conteudo página inical*/
+
+ main .button-contato button{
+    padding: 10px 25px; /* distancia da borda superior e inferior,  altura*/
+    font-size: 30px; /*tamanho da fonte*/
+    font-weight: 2; /*intensidade*/
+    background:transparent;
+    border:5px solid; /*retira as bordas*/
+    border-color: #44AFFF;
+    border-radius: 20px; /*arredonda as bordas*/
+    cursor: pointer; /*muda o estilo do cursor*/
+    transition: .2s;
+    margin-top: -2%;
+    margin-left: 73%;  
+    
+ }
+
+
+ .buton1{
+    color: rgb(255, 255, 255);
+ } 
+ /* cor da fonte do botão */
+
+
+ main .button-contato button:hover{
+    box-shadow: 0px 0px 15px, inset 0px 0px 15px;
+    color:#44AFFF;
+    text-shadow: 0px 0px 15px ;
+    transform:scale(1.05);
+ }/*quando o mouse passa sobre o botão*/
+
+
+
+ section .txt-topo-site{
+ 
+    padding: 40px 4%;
+    max-width: 1350px; /* largura máxima da borda*/
+    color: rgb(255, 255, 255);
+    margin-top: 7%;
+    margin-left: 58%;  /*margem esquerda*/
+    text-align: justify;
+    }
+
+    section .txt-topo-site h1 {
+        font-size: 40px; /*tamanho da fonte*/
+        color: #44AFFF;
+        line-height: 40px; /*espaçamento entre linhas*/
+        text-align: justify;
+
+    }
+
+    section .txt-topo-site p{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+
+

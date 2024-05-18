@@ -9,19 +9,18 @@
     box-sizing: border-box; /* todos elementos dentro da mesma borda*/
     
 
-    *{
-      font-family: "Jaro", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style:oblique;
-    }
+    
 }
  
 body{
+
+    font-family: "Jaro", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style:oblique;
   
     width:100vw;
     height:100vh; /* ocupa toda altura visível do seu navegador */
-    background-image: url(/imagen/woman-wearing-vr-glasses-gaming.jpg);
     background-size:cover ; /*cobrir a tela toda*/
     background-position:left;
     background-repeat: no-repeat;
@@ -32,6 +31,9 @@ body{
 header .cabeçalho{
 max-width: 100%; /* largura máxima da borda*/
 margin: 0 auto; /* centralizar na tela */
+display:flex;
+align-items: center; /*centraliza no cabeçalho*/
+justify-content:space-between; /* manter o maximo de distancia de um elemento*/
 }
 
 /* estilo do cabeçalho */
@@ -42,11 +44,7 @@ header{
  
 }
 
-header .cabeçalho { 
-    display:flex;
-    align-items: center; /*centraliza no cabeçalho*/
-    justify-content:space-between; /* manter o maximo de distancia de um elemento*/
-}
+
 
 header a{
     color:#ffffff;
@@ -77,36 +75,7 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
 
  /*conteudo página inical*/
 
- div .botaocontato button {
-    padding: 10px 25px; /* distancia da borda superior e inferior,  altura*/
-    font-size: 30px; /*tamanho da fonte*/
-    font-weight: 2; /*intensidade*/
-    background:transparent;
-    border:5px solid; /*retira as bordas*/
-    border-color: #44AFFF;
-    border-radius: 20px; /*arredonda as bordas*/
-    cursor: pointer; /*muda o estilo do cursor*/
-    transition: .2s;
-    margin-top: 5%;
-   
- }
-
-
-  div .buton1{
-    color: rgb(255, 255, 255);
- } 
- /* cor da fonte do botão */
-
-
-  div .botaocontato button:hover{
-    box-shadow: 0px 0px 15px, inset 0px 0px 15px;
-    color:#44AFFF;
-    text-shadow: 0px 0px 15px ;
-    transform:scale(1.05);
- }/*quando o mouse passa sobre o botão*/
-
-
-
+  
  div .txt-topo-site{
 
     color: rgb(255, 255, 255);
@@ -129,6 +98,40 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
         font-size: 22px;/* tamaho da fonte*/
         line-height: 25px;/*espaçamento*/
     }
+
+ div .botaocontato button {
+    padding: 10px 25px; /* distancia da borda superior e inferior,  altura*/
+    font-size: 30px; /*tamanho da fonte*/
+    font-weight: 2; /*intensidade*/
+    background:transparent;
+    border:5px solid; /*retira as bordas*/
+    border-color: #44AFFF;
+    border-radius: 20px; /*arredonda as bordas*/
+    cursor: pointer; /*muda o estilo do cursor*/
+    transition: .2s;
+    margin-top: 5%;
+ }
+
+
+  div .buton1{
+    color: rgb(255, 255, 255);
+    font-family: "Jaro", sans-serif ;
+
+ } 
+ /* cor da fonte do botão */
+
+
+  div .botaocontato button:hover{
+    box-shadow: 0px 0px 15px, inset 0px 0px 15px;
+    color:#44AFFF;
+    text-shadow: 0px 0px 15px ;
+    transform:scale(1.05);
+ }/*quando o mouse passa sobre o botão*/
+ 
+
+
+
+
 
 
 

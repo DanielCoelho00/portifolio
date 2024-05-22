@@ -19,15 +19,13 @@ body{
       font-weight: 400;
       font-style:oblique;
   
-    width:100vw;
+    
     height:100vh; /* ocupa toda altura visível do seu navegador */
     background-size:cover ; /*cobrir a tela toda*/
     background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+   
 }
 
 
@@ -58,6 +56,14 @@ header a{
 
 }
 
+header .menu-desktop{
+    padding: 5px;
+border: solid 5px #44AFFF;
+box-shadow: 0 0 5px 3px #44AFFF;
+border-radius: 20px;
+}
+
+
 header a:hover /*quando passar o mouse acontece algo*/{
     text-shadow: 0px 0px 15px #ffffff;
     color:#44AFFF;
@@ -85,17 +91,17 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
 
     color: rgb(255, 255, 255);
     text-align: justify;
-    margin-top: 9%;
+    margin-top: 7%;
     margin-right: 4%;
     margin-left: 62%;
     
     }
 
     div .txt-topo-site h1 {
-        font-size: 43px; /*tamanho da fonte*/
+        font-size: 55px; /*tamanho da fonte*/
         color: #44AFFF;
-        line-height: 40px; /*espaçamento entre linhas*/
-        text-align: justify;
+        line-height: 50px; /*espaçamento entre linhas*/
+        text-align:center;
 
     }
 
@@ -121,6 +127,7 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
 
  div .botaocontato{
     text-align: center;
+    margin-bottom: 50px;
  }
 
 
@@ -152,9 +159,9 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
     
     }
 
-section .interface h2{
+ .interface h2{
     padding: 0px 4%;
-    font-size: 60px;
+    font-size: 50px;
     color: #ffffff;
     text-align:center;
 }
@@ -227,14 +234,14 @@ form .btn-enviar input:hover{
     margin-right: 50px;
     margin-bottom: 30px;
     padding:10px 4%;
-    color: #ffffff;
+    color: rgb(210, 210, 210);
     text-align: center;
     font-size: 30px;
-    border: 5px solid;
     box-shadow: 0 0 5px 3px #44AFFF;
     border-radius: 20px;
-    background-color: #005a9fd8;
+    background-color: #00000099;
 }
+
 
  section > div .Experiências h3{
     font-size: 40px;
@@ -249,10 +256,10 @@ form .btn-enviar input:hover{
 
  /* rodapé */
 footer{
-    padding: 20px 4%;
+    padding: 10px 2%;
     box-shadow: 0 0 5px 3px #44AFFF;
     background-color:#005a9f;
-    margin-top: 100px;
+    
     
 }
 
@@ -266,8 +273,8 @@ footer .line-footer{
 }
 
 footer  button {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: none;
     background-color: #44AFFF;
@@ -277,31 +284,82 @@ footer  button {
     transition: .2s;
 }
 
+footer button:hover{
+    transform:scale(1.05);
+    box-shadow: 0 0 5px 3px #44AFFF;
+}
+
+footer img:hover{
+    transform:scale(1.05);
+    cursor: pointer;
+}
+
+
 
 /*sobre mim */
 
 section  .sobre{
     display: flex;
+    align-items: center;
+}
+
+section  .sobre .texto{
+   margin-bottom: 80px;
 }
 
 
 
  div .imagen img{
-    width: 600px;
+    width: 500px;
+    padding: 0 30px;
     
     
 }
 
 div .texto{
-    color: rgb(255, 255, 255);
+    color: rgb(210, 210, 210);
    text-align: left;
    font-size: 20px; 
-   background-color: #005a9fda;
-   border: solid 5px;
+   background-color: #00000099;
+   
    border-radius: 50px;
    box-shadow: 0 0 5px 3px #44AFFF;
-   padding: 5px 2%;
+   padding: 20px 2%;
    margin-top: 50px;
-   margin-left: 100px;
+   margin-right: 100px;
    text-align: justify;
+   text-indent: 50px;
 }
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #5900ff;
+    
+}
+
+
+/*projetos*/
+main .projetos {
+   
+  
+}
+
+main .projetos .flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.img-port{
+    width: 560px;
+    height: 360px;
+    background-color: rgb(255, 255, 255);
+}
+
+

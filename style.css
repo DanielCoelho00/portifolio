@@ -1,178 +1,206 @@
-
 /* ctrl + ; */
 
 /* Estilo geral */
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* todos elementos dentro da mesma borda*/
-    
+    box-sizing: border-box;
+    /* todos elementos dentro da mesma borda*/
 
-    
+
+
 }
- 
-body{
+
+body {
 
     font-family: "Jaro", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style:oblique;
-  
-    
-    height:100vh; /* ocupa toda altura visível do seu navegador */
-    background-size:cover ; /*cobrir a tela toda*/
-    background-position:center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: oblique;
+
+
+    height: 100vh;
+    /* ocupa toda altura visível do seu navegador */
+    background-size: cover;
+    /*cobrir a tela toda*/
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
-   
+
+
 }
 
-main{
-    min-height: 70.5%;
+main {
+    min-height: 73.4%;
 }
 
 
-header .cabeçalho{
-max-width: 100%; /* largura máxima da borda*/
-margin: 0 auto; /* centralizar na tela */
-display:flex;
-align-items: center; /*centraliza no cabeçalho*/
-justify-content:space-between; /* manter o maximo de distancia de um elemento*/
+header .cabeçalho {
+    max-width: 100%;
+    /* largura máxima da borda*/
+    margin: 0 auto;
+    /* centralizar na tela */
+    display: flex;
+    align-items: center;
+    /*centraliza no cabeçalho*/
+    justify-content: space-between;
+    /* manter o maximo de distancia de um elemento*/
 }
 
-.titulo h2{
+.titulo h2 {
 
     font-size: 50px;
     color: #ffffff;
     align-items: center;
-     
+
 
 }
 
- .titulo span{
+.titulo span {
     color: #44AFFF;
- }
+}
 
- .titulo{
+.titulo {
     position: relative;
-    text-align: center; 
- }
+    text-align: center;
+}
 
 
 
 /* estilo do cabeçalho */
 
-header{
-    
-    padding: 25px 3%; /* distanciar a logo das margens encima e embaixo*/
- 
+header {
+
+    padding: 25px 3%;
+    /* distanciar a logo das margens encima e embaixo*/
+
 }
 
 
 
-header a{
-    color:#ffffff;
-    font-size: 1.3vw; /* tamanho da fonte*/
-    text-decoration:none; /*retira a decoração do texto*/
+header a {
+    color: #ffffff;
+    font-size: 1.3vw;
+    /* tamanho da fonte*/
+    text-decoration: none;
+    /*retira a decoração do texto*/
     display: inline-block;
     transition: .2s;
 
 }
 
-header .menu-desktop{
-    background-color:#00000099 ;
+header .menu-desktop {
+    background-color: #00000099;
     padding: 5px;
-border: solid 5px #44AFFF;
-box-shadow: 0 0 5px 3px #44AFFF;
-border-radius: 20px;
-<span class="animate" style="--i:1;"></span>
+    border: solid 5px #44AFFF;
+    box-shadow: 0 0 5px 3px #44AFFF;
+    border-radius: 20px;
+
 }
 
 
-header a:hover /*quando passar o mouse acontece algo*/{
+header a:hover
+
+/*quando passar o mouse acontece algo*/
+    {
     text-shadow: 0px 0px 15px #ffffff;
-    color:#44AFFF;
-    transform:scale(1.05);/* aumenta o tamanho da fonte*/
-    
+    color: #44AFFF;
+    transform: scale(1.05);
+    /* aumenta o tamanho da fonte*/
+
 }
 
 
- header nav ul{
-    list-style-type: none; /*retira os bolinhas da lista ul*/
- }
+header nav ul {
+    list-style-type: none;
+    /*retira os bolinhas da lista ul*/
+}
 
- header nav ul li{
-display: inline-block;
-padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
- }
+header nav ul li {
+    display: inline-block;
+    padding: 0px
+        /*encime e embaixo*/
+        25px
+        /* esquerda e direita*/
+    ;
+}
 
 
- /*conteudo página inical*/
+/*conteudo página inical*/
 
- 
 
-  
- .txt-topo-site{
+
+
+.txt-topo-site {
 
     color: rgb(255, 255, 255);
     text-align: justify;
     margin-top: 7%;
     margin-right: 4%;
     margin-left: 62%;
-    
-    }
 
- .txt-topo-site h1 {
-        font-size: 55px; /*tamanho da fonte*/
-        color: #44AFFF;
-        line-height: 50px; /*espaçamento entre linhas*/
-        text-align:center;
+}
 
-    }
+.txt-topo-site h1 {
+    font-size: 55px;
+    /*tamanho da fonte*/
+    color: #44AFFF;
+    line-height: 50px;
+    /*espaçamento entre linhas*/
+    text-align: center;
 
-.txt-topo-site p{
-        font-size: 22px;/* tamaho da fonte*/
-        line-height: 25px;/*espaçamento*/
-    }
+}
 
- .botaocontato button {
-    padding: 10px 25px; /* distancia da borda superior e inferior,  altura*/
-    font-size: 30px; /*tamanho da fonte*/
-    font-weight: 2; /*intensidade*/
-    background:transparent;
-    border:5px solid; /*retira as bordas*/
+.txt-topo-site p {
+    font-size: 22px;
+    /* tamaho da fonte*/
+    line-height: 25px;
+    /*espaçamento*/
+}
+
+.botaocontato button {
+    padding: 10px 25px;
+    /* distancia da borda superior e inferior,  altura*/
+    font-size: 30px;
+    /*tamanho da fonte*/
+    font-weight: 2;
+    /*intensidade*/
+    background: transparent;
+    border: 5px solid;
+    /*retira as bordas*/
     border-color: #44AFFF;
-    border-radius: 20px; /*arredonda as bordas*/
-    cursor: pointer; /*muda o estilo do cursor*/
+    border-radius: 20px;
+    /*arredonda as bordas*/
+    cursor: pointer;
+    /*muda o estilo do cursor*/
     transition: .2s;
     margin-top: 5%;
-    
- }
+
+}
 
 
-  .botaocontato{
+.botaocontato {
     text-align: center;
     margin-bottom: 50px;
- }
+}
 
 
 
 
-  .buton1{
+.buton1 {
     color: rgb(255, 255, 255);
-    font-family: "Jaro", sans-serif ;
+    font-family: "Jaro", sans-serif;
 
- } 
+}
 
 
- .decoração{
+.decoração {
     position: relative;
     display: inline-block;
- }
+}
 
- .animate{
+.animate {
     position: absolute;
     top: 0;
     right: 0;
@@ -180,17 +208,16 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
     height: 100%;
     border-radius: 1%;
     background-color: #44AFFF;
-    animation: show-right  1.5s ease forwards;
+    animation: show-right 1.5s ease forwards;
     animation-delay: calc(.2s * var(--i));
-    
- }
 
- @keyframes show-right{
-    100%{
+}
+
+@keyframes show-right {
+    100% {
         width: 0;
     }
- }
- 
+}
 
 
 
@@ -199,31 +226,35 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
 
 
 
- /* cor da fonte do botão */
 
-  .botaocontato button:hover{
+/* cor da fonte do botão */
+
+.botaocontato button:hover {
     box-shadow: 0px 0px 15px, inset 0px 0px 15px;
-    color:#44AFFF;
-    text-shadow: 0px 0px 15px ;
-    transform:scale(1.05);
- }/*quando o mouse passa sobre o botão*/
+    color: #44AFFF;
+    text-shadow: 0px 0px 15px;
+    transform: scale(1.05);
+}
+
+/*quando o mouse passa sobre o botão*/
 
 
 
- /* página contatos */
+/* página contatos */
 
- 
-form{
+
+form {
     padding: 30px 4%;
     max-width: 700px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     background-color: #005a9fe7;
     border: solid 3px #44AFFF;
@@ -231,29 +262,31 @@ form input, form textarea{
     padding: 10px 15px;
     border-radius: 20px;
     color: #ffffff;
-    font-size: 23px;
+    font-size: 20px;
 }
 
-form input::placeholder, form textarea::placeholder{
+form input::placeholder,
+form textarea::placeholder {
     color: #ffffff9e;
     font-size: 18px;
-    font-family: "Jaro", sans-serif ;
-    
+    font-family: "Jaro", sans-serif;
+
 }
 
-form textarea{
-    resize:vertical; /*não redimencionar*/
+form textarea {
+    resize: vertical;
+    /*não redimencionar*/
     height: 150px;
- 
+
 }
 
-.btn-enviar{
+.btn-enviar {
     margin-top: 10px;
     text-align: center;
-    
+
 }
- 
-.btn-enviar input{
+
+.btn-enviar input {
     width: 150px;
     background-color: #005a9fe7;
     border: 5px solid;
@@ -261,70 +294,149 @@ form textarea{
     color: #ffffff;
     cursor: pointer;
     transition: .2s;
-    font-family: "Jaro", sans-serif ;
-   
+    font-family: "Jaro", sans-serif;
+
 }
 
-.btn-enviar input:hover{
+.btn-enviar input:hover {
     box-shadow: 0px 0px 15px, inset 0px 0px 15px;
-    color:#44AFFF;
-    text-shadow: 0px 0px 15px ;
-    transform:scale(1.05);
+    color: #44AFFF;
+    text-shadow: 0px 0px 15px;
+    transform: scale(1.05);
 
 }
 
 /*página experiência*/
+.wrapper {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
- .interface{
+
+.container {
+    height: 450px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 100px;
+    /*largura fechado*/
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 32px;
+    margin: 0px 10px;
+    display: flex;
+    transition: .9s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0 0 5px 3px #44AFFF
+}
+
+.card>.row {
+    color: #44AFFF;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card>.row>.icon {
+    font-size: 40px;
+    color: #44AFFF;
+    padding: 10px 30px;
+}
+
+.card>.row>.description {
+
+    padding: 0px 30px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description{
+    text-align: left;
+}
+
+.description p {
+    padding: 10px 0px;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.description h4 {
+    padding: 0px 0px;
+    font-size: 38px;
+    text-transform: uppercase;
+    /*maiusculo*/
+}
+
+.cards input {
+    display: none;
+}
+
+input:checked+label {
+    width: 500px;
+    /*largura box */
+}
+
+input:checked+label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for=c1] {
+
+    background: #00000099;
+}
+
+.card[for=c2] {
+    background: #00000099;
+}
+
+.card[for=c3] {
+    background: #00000099;
+}
+
+.card[for=c4] {
+    background: #00000099;
+}
+
+.card[for=c5] {
+    background: #00000099;
+}
+
+.interface {
     display: flex;
     margin-top: 2%;
 }
 
-.Experiências{
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    padding:10px 4%;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 15px;
-    box-shadow: 0 0 5px 3px #44AFFF;
-    border-radius: 20px;
-    background-color: #00000099;
-}
 
 
-.Experiências h3{
-    font-size: 25px;
-    color: #44AFFF;
- }
 
-.Experiências i{
-    font-size: 30px;
-    color: #44AFFF;
- }
-
-
- /* rodapé */
-footer{
+/* rodapé */
+footer {
     padding: 10px 2%;
     box-shadow: 0 0 5px 3px #44AFFF;
-    background-color:#00000099;
-    
-    
+    background-color: #00000099;
+
+
 }
 
-.line-footer{
+.line-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+
 
 }
 
-footer  button {
+footer button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -336,13 +448,13 @@ footer  button {
     transition: .2s;
 }
 
-footer button:hover{
-    transform:scale(1.05);
+footer button:hover {
+    transform: scale(1.05);
     box-shadow: 0 0 5px 3px #44AFFF;
 }
 
-footer img:hover{
-    transform:scale(1.05);
+footer img:hover {
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -350,168 +462,171 @@ footer img:hover{
 
 /*sobre mim */
 
-.sobre{
+.sobre {
     display: flex;
     align-items: center;
     padding: 2% 4%;
+
 }
 
 
 
-.imagen img{
-    width: 500px;
-    padding: 0 30px;
-    
-    
+.imagen img {
+    width: 50px;
+    padding: 0 0px;
+
+
 }
 
-.texto{
+.texto {
     color: rgb(255, 255, 255);
-   text-align: left;
-   font-size: 20px; 
-   background-color: #00000099;
-   border-radius: 50px;
-   box-shadow: 0 0 5px 3px #44AFFF;
-   padding: 20px 2%;
-   text-align: justify;
-   text-indent: 50px;
+    text-align: left;
+    font-size: 20px;
+    background-color: #00000099;
+    border-radius: 50px;
+    box-shadow: 0 0 5px 3px #44AFFF;
+    padding: 20px 2%;
+    text-align: justify;
+    text-indent: 50px;
 }
 
 
- /*barra de rolagem*/
+/*barra de rolagem*/
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 10px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: #44AFFF;
-    
+
 }
 
 
 /*projetos*/
 
 
-    .slider{
-        position: relative;
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-        
-    }
-    
+.slider {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
 
-
-    .item{
-        color: #ffffff;
-        margin-top: 2%;
-        position: absolute;
-        width: 380px;
-        height: 350px;
-        text-align: justify;
-        background-color: #00000099;
-        border-radius: 10px;
-        padding: 20px;
-        transition: 0.5s;
-        left: calc(50% - 190px);
-        top: 0;
-        border: solid 3px #44AFFF; box-shadow: 0 0 5px 3px #44AFFF;
-    }
-    #next, #prev{
-        position: absolute;
-        top: 40%;
-        color: #44AFFF;
-        background-color: transparent;
-        border: none;
-        font-size: xxx-large;
-        font-family: monospace;
-        font-weight: bold;
-        left: 400px;
-        transition: .2s;
-       
-    }
-    #next{
-        left: unset;
-        right: 400px;
-    }
-
-    #next:hover, #prev:hover{
-        color: #ffffff ;
-        transform:scale(1.05);
-        cursor: pointer;
-        
-
-    }
-
-
-    /*FORMAÇÃO*/
-    .timeline{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2% 6%;
-        
-    }
-
-    .timeline .timeline-row {
-        display: flex;
-        column-gap: 64px;
-
-    }
-
-    
-
-    .timeline-row .timeline-box{
-        position: relative;
-        border-left: 4px solid #44AFFF;
-    }
-
-    .timeline-box .timeline-content{
-        position: relative;
-        padding-left: 27px;
-    }
-
-    .timeline-box .timeline-content::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -12px;
-        width: 20px;
-        height: 20px;
-        background-color: #44AFFF;
-        border-radius: 50%;
-    }
-
-    .timeline-content .content{
-        padding: 15px 2%;
-        box-shadow: 0 0 5px 3px #44AFFF;
-        background-color: #00000099;
-        border-radius: 8px;
-        margin-bottom:32px;
-    }
-
-    .timeline-content .content .year{
-        font-size: 26px;
-        color: #44AFFF;
-    }
-
-    .timeline-content .content .year i{
-        margin-right: 8px;
-    }
-
-    .timeline-content .content h3{
-        font-size: 20px;
-        margin: 8px 0;
-        color: #ffffff;
-    }
-
-    .timeline-content .content p{
-        font-size: 18px;
-        color: #ffffff;
-    }
+}
 
 
 
+.item {
+    color: #ffffff;
+    margin-top: 2%;
+    position: absolute;
+    width: 480px;
+    height: 380px;
+    text-align: justify;
+    background-color: #00000099;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 240px);
+    top: 0;
+    border: solid 3px #44AFFF;
+    box-shadow: 0 0 5px 3px #44AFFF;
+}
+
+#next,
+#prev {
+    position: absolute;
+    top: 40%;
+    color: #44AFFF;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 400px;
+    transition: .2s;
+
+}
+
+#next {
+    left: unset;
+    right: 400px;
+}
+
+#next:hover,
+#prev:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    cursor: pointer;
 
 
+}
+
+
+/*FORMAÇÃO*/
+.timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 6%;
+
+}
+
+.timeline .timeline-row {
+    display: flex;
+    column-gap: 64px;
+    flex-wrap: wrap;
+
+}
+
+
+
+.timeline-row .timeline-box {
+    position: relative;
+    border-left: 4px solid #44AFFF;
+    flex: 1 1 320px;
+}
+
+.timeline-box .timeline-content {
+    position: relative;
+    padding-left: 27px;
+}
+
+.timeline-box .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background-color: #44AFFF;
+    border-radius: 50%;
+}
+
+.timeline-content .content {
+    padding: 15px 2%;
+    box-shadow: 0 0 5px 3px #44AFFF;
+    background-color: #00000099;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.timeline-content .content .year {
+    font-size: 26px;
+    color: #44AFFF;
+}
+
+.timeline-content .content .year i {
+    margin-right: 8px;
+}
+
+.timeline-content .content h3 {
+    font-size: 20px;
+    margin: 8px 0;
+    color: #ffffff;
+}
+
+.timeline-content .content p {
+    font-size: 18px;
+    color: #ffffff;
+}

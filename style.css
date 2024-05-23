@@ -25,6 +25,7 @@ body{
     background-position:center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
    
 }
 
@@ -41,16 +42,25 @@ align-items: center; /*centraliza no cabeçalho*/
 justify-content:space-between; /* manter o maximo de distancia de um elemento*/
 }
 
-.interface h2{
-    padding: 0px 4%;
+.titulo h2{
+
     font-size: 50px;
     color: #ffffff;
-    text-align:center;
+    align-items: center;
+     
+
 }
 
- main .interface span{
+ .titulo span{
     color: #44AFFF;
  }
+
+ .titulo{
+    position: relative;
+    text-align: center; 
+ }
+
+
 
 /* estilo do cabeçalho */
 
@@ -72,10 +82,12 @@ header a{
 }
 
 header .menu-desktop{
+    background-color:#00000099 ;
     padding: 5px;
 border: solid 5px #44AFFF;
 box-shadow: 0 0 5px 3px #44AFFF;
 border-radius: 20px;
+<span class="animate" style="--i:1;"></span>
 }
 
 
@@ -102,7 +114,7 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
  
 
   
- div .txt-topo-site{
+ .txt-topo-site{
 
     color: rgb(255, 255, 255);
     text-align: justify;
@@ -112,7 +124,7 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
     
     }
 
-    div .txt-topo-site h1 {
+ .txt-topo-site h1 {
         font-size: 55px; /*tamanho da fonte*/
         color: #44AFFF;
         line-height: 50px; /*espaçamento entre linhas*/
@@ -120,12 +132,12 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
 
     }
 
-    div .txt-topo-site p{
+.txt-topo-site p{
         font-size: 22px;/* tamaho da fonte*/
         line-height: 25px;/*espaçamento*/
     }
 
- div .botaocontato button {
+ .botaocontato button {
     padding: 10px 25px; /* distancia da borda superior e inferior,  altura*/
     font-size: 30px; /*tamanho da fonte*/
     font-weight: 2; /*intensidade*/
@@ -140,7 +152,7 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
  }
 
 
- div .botaocontato{
+  .botaocontato{
     text-align: center;
     margin-bottom: 50px;
  }
@@ -148,14 +160,48 @@ padding: 0px /*encime e embaixo*/25px /* esquerda e direita*/;
 
 
 
-  div .buton1{
+  .buton1{
     color: rgb(255, 255, 255);
     font-family: "Jaro", sans-serif ;
 
  } 
+
+
+ .decoração{
+    position: relative;
+    display: inline-block;
+ }
+
+ .animate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1%;
+    background-color: #44AFFF;
+    animation: show-right  1.5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    
+ }
+
+ @keyframes show-right{
+    100%{
+        width: 0;
+    }
+ }
+ 
+
+
+
+
+
+
+
+
  /* cor da fonte do botão */
 
-  div .botaocontato button:hover{
+  .botaocontato button:hover{
     box-shadow: 0px 0px 15px, inset 0px 0px 15px;
     color:#44AFFF;
     text-shadow: 0px 0px 15px ;
@@ -180,7 +226,8 @@ form{
 form input, form textarea{
     width: 100%;
     background-color: #005a9fe7;
-    border: 0;
+    border: solid 3px #44AFFF;
+    box-shadow: 0 0 5px 3px #44AFFF;
     padding: 10px 15px;
     border-radius: 20px;
     color: #ffffff;
@@ -190,6 +237,7 @@ form input, form textarea{
 form input::placeholder, form textarea::placeholder{
     color: #ffffff9e;
     font-size: 18px;
+    font-family: "Jaro", sans-serif ;
     
 }
 
@@ -199,12 +247,13 @@ form textarea{
  
 }
 
-form .btn-enviar{
+.btn-enviar{
     margin-top: 10px;
     text-align: center;
+    
 }
  
-form .btn-enviar input{
+.btn-enviar input{
     width: 150px;
     background-color: #005a9fe7;
     border: 5px solid;
@@ -212,10 +261,11 @@ form .btn-enviar input{
     color: #ffffff;
     cursor: pointer;
     transition: .2s;
+    font-family: "Jaro", sans-serif ;
    
 }
 
-form .btn-enviar input:hover{
+.btn-enviar input:hover{
     box-shadow: 0px 0px 15px, inset 0px 0px 15px;
     color:#44AFFF;
     text-shadow: 0px 0px 15px ;
@@ -225,17 +275,18 @@ form .btn-enviar input:hover{
 
 /*página experiência*/
 
- div.interface1{
+ .interface{
     display: flex;
+    margin-top: 2%;
 }
 
- section > div .Experiências{
+.Experiências{
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     padding:10px 4%;
-    color: rgb(210, 210, 210);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 15px;
     box-shadow: 0 0 5px 3px #44AFFF;
@@ -244,12 +295,12 @@ form .btn-enviar input:hover{
 }
 
 
- section > div .Experiências h3{
+.Experiências h3{
     font-size: 25px;
     color: #44AFFF;
  }
 
- section > div .Experiências i{
+.Experiências i{
     font-size: 30px;
     color: #44AFFF;
  }
@@ -259,12 +310,12 @@ form .btn-enviar input:hover{
 footer{
     padding: 10px 2%;
     box-shadow: 0 0 5px 3px #44AFFF;
-    background-color:#005a9f;
+    background-color:#00000099;
     
     
 }
 
-footer .line-footer{
+.line-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -299,46 +350,42 @@ footer img:hover{
 
 /*sobre mim */
 
-main  .sobre{
+.sobre{
     display: flex;
     align-items: center;
-}
-
-main  .sobre .texto{
-   margin-bottom: 80px;
+    padding: 2% 4%;
 }
 
 
 
- div .imagen img{
+.imagen img{
     width: 500px;
     padding: 0 30px;
     
     
 }
 
-div .texto{
-    color: rgb(210, 210, 210);
+.texto{
+    color: rgb(255, 255, 255);
    text-align: left;
    font-size: 20px; 
    background-color: #00000099;
-   
    border-radius: 50px;
    box-shadow: 0 0 5px 3px #44AFFF;
    padding: 20px 2%;
-   margin-top: 50px;
-   margin-right: 100px;
    text-align: justify;
    text-indent: 50px;
 }
 
+
+ /*barra de rolagem*/
 
 ::-webkit-scrollbar{
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #5900ff;
+    background-color: #44AFFF;
     
 }
 
@@ -349,21 +396,27 @@ div .texto{
     .slider{
         position: relative;
         width: 100%;
-        height: 370px;
+        height: 400px;
         overflow: hidden;
+        
     }
+    
+
+
     .item{
-        margin-top: 10px;
+        color: #ffffff;
+        margin-top: 2%;
         position: absolute;
         width: 380px;
         height: 350px;
         text-align: justify;
-        background-color: #fff;
+        background-color: #00000099;
         border-radius: 10px;
         padding: 20px;
         transition: 0.5s;
         left: calc(50% - 190px);
         top: 0;
+        border: solid 3px #44AFFF; box-shadow: 0 0 5px 3px #44AFFF;
     }
     #next, #prev{
         position: absolute;
@@ -376,7 +429,7 @@ div .texto{
         font-weight: bold;
         left: 400px;
         transition: .2s;
-        text-shadow: 0px 0px 15px #44AFFF;
+       
     }
     #next{
         left: unset;
@@ -384,12 +437,81 @@ div .texto{
     }
 
     #next:hover, #prev:hover{
-        color: #005a9f ;
+        color: #ffffff ;
         transform:scale(1.05);
         cursor: pointer;
         
 
     }
+
+
+    /*FORMAÇÃO*/
+    .timeline{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 6%;
+        
+    }
+
+    .timeline .timeline-row {
+        display: flex;
+        column-gap: 64px;
+
+    }
+
+    
+
+    .timeline-row .timeline-box{
+        position: relative;
+        border-left: 4px solid #44AFFF;
+    }
+
+    .timeline-box .timeline-content{
+        position: relative;
+        padding-left: 27px;
+    }
+
+    .timeline-box .timeline-content::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -12px;
+        width: 20px;
+        height: 20px;
+        background-color: #44AFFF;
+        border-radius: 50%;
+    }
+
+    .timeline-content .content{
+        padding: 15px 2%;
+        box-shadow: 0 0 5px 3px #44AFFF;
+        background-color: #00000099;
+        border-radius: 8px;
+        margin-bottom:32px;
+    }
+
+    .timeline-content .content .year{
+        font-size: 26px;
+        color: #44AFFF;
+    }
+
+    .timeline-content .content .year i{
+        margin-right: 8px;
+    }
+
+    .timeline-content .content h3{
+        font-size: 20px;
+        margin: 8px 0;
+        color: #ffffff;
+    }
+
+    .timeline-content .content p{
+        font-size: 18px;
+        color: #ffffff;
+    }
+
+
 
 
 

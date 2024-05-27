@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poetsen+One&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Oxanium:wght@200..800&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+
     <!-- fim go google -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -57,66 +63,83 @@
 
             <div class="slider">
                 <div class="item">
-                    <h1>Slide 1</h1>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                    <div class="template">
+                        <img src="/imagen/01.png" alt="">
+                    </div>
+                    <h1>Blog com Recomendação de Conteúdo</h1>
+
+                    <button onclick="abrirModal()" class="btn3"> &lt; Saiba Mais &gt; </button>
+
+                </div>
+
+                <div class="item">
+                    <div class="template">
+                        <img src="/imagen/02.png" alt="">
+                    </div>
+                    <h1>Comércio Eletrônico com Chatbot</h1>
+
+                    <button onclick="abrirModal1()" class="btn3"> &lt; Saiba Mais &gt; </button>
+
                 </div>
                 <div class="item">
-                    <h1>Slide 2</h1>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                    <div class="template">
+                        <img src="/imagen/03.png" alt="">
+                    </div>
+                    <h1>Rede Social</h1>
+
+                    <button onclick="abrirModal2()" class="btn3"> &lt; Saiba Mais &gt; </button>
+
+                </div>
+
+                <div class="item">
+                    <div class="template">
+                        <img src="/imagen/04.png" alt="">
+                    </div>
+                    <h1>Portfólio Interativo</h1>
+
+                    <button onclick="abrirModal3()" class="btn3"> &lt; Saiba Mais &gt; </button>
+
+                </div>
+
+                <div class="item">
+                    <div class="template">
+                        <img src="/imagen/05.png" alt="">
+                    </div>
+                    <h1>Plataforma de E-learning</h1>
+
+                    <button onclick="abrirModal4()" class="btn3"> &lt; Saiba Mais &gt; </button>
+
+                </div>
+
+                <div class="item">
+                    <div class="template">
+                        <img src="/imagen/06.png" alt="">
+                    </div>
+                    <h1>Aplicativo de Tarefas</h1>
+
+                    <button onclick="abrirModal5()" class="btn3"> &lt; Saiba Mais &gt; </button>
+
                 </div>
                 <div class="item">
-                    <h1>Slide 3</h1>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </div>
-                <div class="item">
-                    <h1>Slide 4</h1>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </div>
-                <div class="item">
-                    <h1>Slide 5</h1>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </div>
-                <div class="item">
-                    <h1>Slide git </h1>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
-                </div>
-                <div class="item">
-                    <h1>Slide 7</h1>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere magni magnam unde ipsam repudiandae
-                    explicabo expedita labore, sequi minus neque beatae voluptatum, quasi accusamus quia quis voluptas
-                    laborum ad! Ab totam doloribus, excepturi possimus rem vel quia fugit molestiae officiis!
+                    <div class="template">
+                        <img src="/imagen/07.png" alt="">
+                    </div>
+                    <h1>Plataforma de Streaming de Música</h1>
+
+                    <button onclick="abrirModal6()" class="btn3"> &lt; Saiba Mais &gt; </button>
+
                 </div>
                 <button id="next"><i class="bi bi-arrow-right-circle-fill"></i></button>
                 <button id="prev"><i class="bi bi-arrow-left-circle-fill"></i></button>
 
             </div>
 
-            <script src="app.js"></script>
+
 
 
         </section>
 
-
-
-
-
-
     </main>
-
-
-
 
 
 
@@ -127,11 +150,16 @@
             <div class="line-footer">
 
                 <div class="btn-social">
-                    <a href="https://www.instagram.com/daniel_vlc18/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                    <a href="https://github.com/DanielCoelho00" target="_blank"><button><i class="bi bi-github"></i></button></a>
-                    <a href="https://www.linkedin.com/in/daniel-vitor-leite-coelho-5ba3252a4/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                    <a href="https://wa.me/5527997389334" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
-                    <a href="mailto:daniel.coelholeite@hotmail.com" target="_blank"><button><i class="bi bi-envelope-at-fill"></i></button></a>
+                    <a href="https://www.instagram.com/daniel_vlc18/" target="_blank"><button><i
+                                class="bi bi-instagram"></i></button></a>
+                    <a href="https://github.com/DanielCoelho00" target="_blank"><button><i
+                                class="bi bi-github"></i></button></a>
+                    <a href="https://www.linkedin.com/in/daniel-vitor-leite-coelho-5ba3252a4/"
+                        target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                    <a href="https://wa.me/5527997389334" target="_blank"><button><i
+                                class="bi bi-whatsapp"></i></button></a>
+                    <a href="mailto:daniel.coelholeite@hotmail.com" target="_blank"><button><i
+                                class="bi bi-envelope-at-fill"></i></button></a>
 
                 </div>
 
@@ -145,6 +173,189 @@
 
         </div>
     </footer>
+
+
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Descrição do Tema:</h1>
+            <p>Um "Blog com Recomendação de Conteúdo" é uma plataforma web onde os usuários podem criar,
+                publicar e compartilhar conteúdo, como artigos, vídeos, fotos, etc. Além disso,
+                a plataforma utiliza algoritmos de recomendação para sugerir conteúdo relevante aos usuários com base em
+                seus interesses,
+                histórico de navegação e interações anteriores. Isso cria uma experiência personalizada para cada
+                usuário, aumentando o engajamento e a satisfação do usuário.</p>
+            <br>
+            <h1>Linguagem de Programação:</h1>
+            <p>A linguagem de programação usada no desenvolvimento do blog com recomendação de conteúdo foi Python.
+                Python é uma escolha popular devido à sua sintaxe simples e legibilidade, o que facilita o
+                desenvolvimento e a manutenção do código.
+                Além disso, existem muitas bibliotecas e frameworks em Python que são úteis para implementar recursos
+                como sistema de recomendação
+                (por exemplo, scikit-learn para aprendizado de máquina) e desenvolvimento web (por exemplo, Django ou
+                Flask para construção de aplicativos web).</p>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal1">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Descrição do Tema:</h1>
+            <p>O "Comércio Eletrônico com Chatbot" é uma plataforma online que permite aos usuários comprar e vender
+                produtos ou serviços pela internet. O diferencial dessa plataforma é a integração de um chatbot, um
+                programa de computador que simula uma conversa humana, para fornecer assistência e interação com os
+                clientes. O chatbot pode responder perguntas comuns dos clientes, ajudar na seleção de produtos,
+                fornecer recomendações personalizadas, processar pedidos e até mesmo realizar transações diretamente
+                dentro da conversa.</p>
+            <br>
+            <h1>Linguagem de Programação:</h1>
+            <p>A linguagem de programação usada no desenvolvimento do comércio eletrônico com chatbot é o JavaScript.
+                JavaScript é uma escolha popular para desenvolvimento web, pois é amplamente suportado pelos navegadores
+                e permite a criação de interfaces de usuário interativas e dinâmicas. Além disso, para a implementação
+                do chatbot, frameworks e bibliotecas de JavaScript, como Node.js para o lado do servidor e React.js ou
+                Vue.js para o lado do cliente, podem ser empregados para facilitar o desenvolvimento e a integração do
+                chatbot com a plataforma de comércio eletrônico.</p>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal2">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Descrição do Tema:</h1>
+            <p>Uma "Rede Social " usando Python e Django é uma plataforma online onde os usuários podem se conectar,
+                compartilhar conteúdo, interagir e construir comunidades em torno de interesses comuns. Essa rede social
+                pode incluir recursos como perfis de usuário, feeds de notícias, sistema de amigos ou seguidores, grupos
+                temáticos, mensagens diretas, publicação de conteúdo multimídia (como texto, fotos e vídeos),
+                comentários, curtidas, entre outros. O Django é um framework de desenvolvimento web em Python que
+                oferece uma estrutura robusta e escalável para construir aplicações web complexas e seguras, tornando-o
+                uma escolha popular para o desenvolvimento de redes sociais.</p>
+            <br>
+            <h1>Linguagem de Programação:</h1>
+            <p>A linguagem de programação principal utilizada para desenvolver uma rede social com Django é o Python.
+                Python é uma linguagem de programação de alto nível conhecida por sua simplicidade, legibilidade e vasta
+                comunidade de desenvolvedores. Com o Django, os desenvolvedores podem criar rapidamente aplicativos web
+                poderosos e seguros, aproveitando os recursos integrados do framework, como autenticação de usuário, ORM
+                (Object-Relational Mapping) para interagir com bancos de dados, sistema de administração e muito mais.
+                Além disso, o Django oferece uma arquitetura baseada em MVC (Model-View-Controller) ou, mais
+                precisamente, MTV (Model-Template-View), que ajuda na organização e manutenção do código.</p>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal3">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Descrição do Tema:</h1>
+            <p>Um "Portfólio Interativo" é uma representação digital das habilidades, projetos e experiências de um
+                profissional ou empresa. Ele não só exibe informações estáticas, como também permite interações
+                dinâmicas e envolventes. Ao utilizar React.js no frontend e Node.js no backend, o portfólio pode ser
+                criado de forma dinâmica e altamente personalizável. Os visitantes podem explorar projetos, visualizar
+                habilidades, ler sobre experiências passadas e entrar em contato de maneira interativa.</p>
+            <br>
+            <h1>Linguagem de Programação:</h1>
+            <p> React.js: React.js é uma biblioteca JavaScript de código aberto amplamente utilizada para construir
+                interfaces de usuário interativas e reativas. Com React, o portfólio pode ser dividido em componentes
+                reutilizáveis, o que facilita o desenvolvimento, manutenção e escalabilidade. Os recursos interativos,
+                como animações, carregamento dinâmico de conteúdo e filtragem de projetos, podem ser facilmente
+                implementados com React.</p><br>
+
+            <p> Node.js é uma plataforma de tempo de execução JavaScript que permite executar código JavaScript no
+                servidor. Com Node.js, é possível criar um backend robusto e escalável para o portfólio. Ele pode ser
+                usado para lidar com a lógica de negócios, gerenciar dados de projetos e experiências, lidar com
+                solicitações de contato e autenticação de usuários, entre outras funcionalidades.</p><br>
+
+            <P>Express.js: Express.js é um framework web minimalista para Node.js que simplifica o processo de criação
+                de APIs RESTful e aplicativos web. Pode ser usado em conjunto com Node.js para criar rotas e
+                controladores que lidam com solicitações HTTP, gerenciando assim a comunicação entre o frontend e o
+                backend do portfólio.</p>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal4">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Descrição do Tema:</h1>
+            <p>Uma "Plataforma de E-learning" é um sistema online que oferece recursos educacionais, como cursos, aulas,
+                materiais de estudo e interações entre alunos e instrutores. Ao utilizar Ruby on Rails como framework de
+                desenvolvimento, é possível criar uma plataforma robusta e escalável para fornecer educação à distância
+                de forma eficiente e interativa.</p>
+            <br>
+            <h1>Linguagem de Programação:</h1>
+            <p>Ruby on Rails é um framework de desenvolvimento web em Ruby que segue o princípio de convenção sobre
+                configuração, o que significa que ele fornece estruturas padrão para o desenvolvimento de aplicativos
+                web. Com Ruby on Rails, é possível criar rapidamente uma plataforma de e-learning, definindo modelos de
+                dados, controladores e visualizações de forma eficiente. O framework também oferece recursos como
+                autenticação de usuários, gestão de sessões, manipulação de formulários e conexão com banco de dados,
+                simplificando o desenvolvimento e a manutenção da plataforma.</p>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal5">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Descrição do Tema:</h1>
+            <p>Um "Aplicativo de Tarefas" é uma ferramenta digital que permite aos usuários criar, organizar e gerenciar
+                suas tarefas diárias, de forma eficiente. Utilizando Angular como framework frontend e Firebase como
+                plataforma de desenvolvimento de aplicativos móveis e web, é possível criar um aplicativo de tarefas
+                moderno e colaborativo.</p>
+            <br>
+            <h1>Linguagem de Programação:</h1>
+            <p>Angular: Angular é um framework de desenvolvimento web e móvel mantido pelo Google, que permite criar
+                aplicativos de uma única página (SPA) de forma rápida e eficiente. Com Angular, é possível construir uma
+                interface de usuário dinâmica e responsiva para o aplicativo de tarefas, utilizando componentes
+                reutilizáveis e arquitetura baseada em módulos.</p><br>
+
+            <P>Firebase: Firebase é uma plataforma de desenvolvimento de aplicativos móveis e web oferecida pelo Google,
+                que fornece uma variedade de serviços, incluindo armazenamento em tempo real, autenticação de usuários,
+                hospedagem de arquivos estáticos, e muito mais. No contexto de um aplicativo de tarefas, Firebase pode
+                ser utilizado para armazenar e sincronizar dados de tarefas em tempo real entre os dispositivos dos
+                usuários, além de fornecer recursos de autenticação para garantir a segurança dos dados.</p>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal6">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Descrição do Tema:</h1>
+            <p>Uma Plataforma de Streaming de Música oferece acesso a um extenso catálogo de músicas, álbuns e playlists
+                através da internet. Os usuários podem explorar diferentes gêneros musicais, descobrir novos artistas,
+                criar suas próprias playlists personalizadas e ouvir música sob demanda, geralmente por meio de um
+                modelo de assinatura mensal. Além disso, algumas plataformas de streaming de música oferecem recursos
+                adicionais, como recomendações personalizadas com base nos hábitos de audição do usuário, integração
+                social para compartilhar música com amigos e acesso offline para ouvir música sem conexão com a
+                internet.</p>
+            <br>
+            <h1>Linguagem de Programação:</h1>
+            <p>Backend:
+
+                Para lidar com a complexidade do armazenamento e transmissão de uma grande quantidade de dados de áudio,
+                é comum utilizar linguagens de programação como Python, Java ou Node.js para o backend.
+                Bancos de dados como MySQL, MongoDB ou PostgreSQL podem ser empregados para armazenar informações sobre
+                artistas, álbuns, faixas e preferências dos usuários.</p><br>
+
+            <p>Frontend:
+
+                Frameworks de desenvolvimento web como React.js, Angular ou Vue.js são frequentemente utilizados para
+                construir interfaces de usuário interativas e responsivas.
+                HTML5 e CSS3 são usados para estruturar e estilizar as páginas web da plataforma de streaming de música.
+            </p><br>
+
+            <P>Streaming de Música:
+
+                Para transmitir áudio de alta qualidade pela internet, tecnologias de streaming como HLS (HTTP Live
+                Streaming) ou MPEG-DASH (Dynamic Adaptive Streaming over HTTP) podem ser implementadas.
+                Protocolos de segurança como HTTPS são essenciais para proteger a privacidade e segurança dos dados do
+                usuário durante a transmissão de música.</P><br>
+
+            <p> Integração de Pagamentos:
+
+                Sistemas de pagamento online seguros, como Stripe, PayPal ou sistemas de pagamento próprios, são
+                integrados para processar assinaturas de usuários e transações de compra de músicas.</p>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+
 
 
 </body>

@@ -41,10 +41,6 @@ p {
     font-style: oblique;
 }
 
-main {
-    min-height: 104%;
-}
-
 .cabeçalho {
     max-width: 100%;
     /* largura máxima da borda*/
@@ -273,6 +269,7 @@ form textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -538,14 +535,13 @@ footer img:hover {
 /*janela modal*/
 .janela-modal {
     padding: 20px;
-    min-width: 100%;
-    min-height: 120%;
+    min-width: 100;
+    min-height: 100vh;
     text-align: center;
     position: absolute;
     top: 0;
     left: 0;
     background-color: #63636397;
-    background-size: cover;
     display: none;
     align-items: center;
     justify-content: center;
@@ -557,7 +553,7 @@ footer img:hover {
 }
 
 .modal {
-    width: 60%;
+    width: 80%;
     min-width: 450px;
     min-height: 400px;
     background-color: #ffffff85;
@@ -567,7 +563,7 @@ footer img:hover {
 }
 
 .modal p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
     margin-top: 10px;
 }

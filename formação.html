@@ -18,6 +18,8 @@
 
     <!-- fim go google -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="efeito.js" defer></script>
 
 
     <title>Document</title>
@@ -25,19 +27,19 @@
 </head>
 
 
-<body style="background-image: url(/imagen/v627-aew-41-technologybackground.jpg);">
+<body style="background-image: url(/imagen/v627-aew-21-technologybackground.jpg);">
 
     <header>
         <div class="cabeçalho">
             <div class="logo">
                 <a href="http://127.0.0.1:5500/">
-                    <img src="imagen/Design sem nome4.png" alt="logo DNL">
+                    <img src="/imagen/portifolio00.png" alt="logo DNL">
                 </a>
             </div><!--logotipo-->
 
 
             <nav class="menu-desktop">
-                <ul>
+                <ul class="menu-principal">
                     <li><a href="http://127.0.0.1:5500/">&lt;Início&gt;</a></li>
                     <li><a href="http://127.0.0.1:5500/projetos.html">&lt;Projetos&gt;</a></li>
                     <li><a href="http://127.0.0.1:5500/forma%C3%A7%C3%A3o.html">&lt;Formação&gt;</a>
@@ -46,8 +48,29 @@
                     <li><a href="http://127.0.0.1:5500/sobre-mim.html">&lt;Sobre mim&gt;</a></li>
 
                 </ul>
+
             </nav>
 
+            <div class="btn-abrir-menu" id="btn-menu"><i class="bi bi-list"></i></div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar"><i class="bi bi-x"></i></div>
+        
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/">&lt;Início&gt;</a></li>
+                        <li><a href="http://127.0.0.1:5500/projetos.html">&lt;Projetos&gt;</a></li>
+                        <li><a href="http://127.0.0.1:5500/forma%C3%A7%C3%A3o.html">&lt;Formação&gt;</a></li>
+                        <li><a href="http://127.0.0.1:5500/experiencia.html">&lt;Experiências&gt;</a></li>
+                        <li><a href="http://127.0.0.1:5500/sobre-mim.html">&lt;Sobre mim&gt;</a></li>
+        
+                    </ul>
+        
+                </nav>
+    
+            </div>
+
+            <div class="overlay-menu" id="overlay-menu"></div>
 
         </div><!--cabeçalho-->
 
@@ -65,16 +88,16 @@
 
             <div class="timeline-row">
 
-                <div class="timeline-box">
+                <div class="timeline-box efeito-timeline1">
                     <div class="timeline-content">
-                        <div class="content">
+                        <div class="content ">
                             <div class="year"><i class="bi bi-calendar3"></i>2014 - 2017 </div> <!--year-->
                             <h3>Ensino Médio/Técnico</h3>
                             <p>Conclui o ensino médio no Colégio Estadual da minha cidade natal, desenvolvendo interesse
                                 inicial em informática e programação.</p>
                         </div>
                         <!-- "content" -->
-                        <span class="animate" style="--i:1;"></span>
+
                     </div>
                     <!-- timeline-content -->
 
@@ -88,7 +111,7 @@
                                 relacionadas ao desenvolvimento web.</p>
                         </div>
                         <!-- "content" -->
-                        <span class="animate" style="--i:1;"></span>
+
                     </div>
                     <!-- timeline-content -->
 
@@ -100,7 +123,7 @@
                                 adquiridos na universidade em projetos reais de desenvolvimento web.</p>
                         </div>
                         <!-- "content" -->
-                        <span class="animate" style="--i:1;"></span>
+
                     </div>
                     <!-- timeline-content -->
 
@@ -112,7 +135,7 @@
 
 
 
-                <div class="timeline-box">
+                <div class="timeline-box efeito-timeline4">
 
                     <div class="timeline-content">
                         <div class="content">
@@ -124,7 +147,7 @@
                                 e Node.js.</p>
                         </div>
                         <!-- "content" -->
-                        <span class="animate" style="--i:4;"></span>
+
                     </div>
                     <!-- timeline-content -->
 
@@ -136,7 +159,7 @@
                                 desenvolvimento web, adquirindo experiência prática e ampliando meu portfólio.</p>
                         </div>
                         <!-- "content" -->
-                        <span class="animate" style="--i:4;"></span>
+
                     </div>
                     <!-- timeline-content -->
 
@@ -148,7 +171,7 @@
                                 meus estudos em aplicações web e tecnologias emergentes.</p>
                         </div>
                         <!-- "content" -->
-                        <span class="animate" style="--i:4;"></span>
+
                     </div>
                     <!-- timeline-content -->
 
@@ -186,7 +209,7 @@
                 </div>
 
                 <div class="logo-footer">
-                    <a href="http://127.0.0.1:5500/"><img src="/imagen/Design sem nome4.png" alt=""></a>
+                    <a href="http://127.0.0.1:5500/"><img src="/imagen/111111Design sem nome.png" alt=""></a>
 
                 </div><!--logo-footer-->
 
@@ -195,7 +218,6 @@
 
         </div>
     </footer>
-
 
 </body>
 

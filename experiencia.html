@@ -18,6 +18,8 @@
 
     <!-- fim go google -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="efeito.js" defer></script>
 
 
     <title>Document</title>
@@ -25,27 +27,49 @@
 </head>
 
 
-<body style="background-image: url(/imagen/v627-aew-41-technologybackground.jpg);">
+<body style="background-image: url(/imagen/v627-aew-21-technologybackground.jpg);">
     <header>
         <div class="cabeçalho">
             <div class="logo">
                 <a href="http://127.0.0.1:5500/">
-                    <img src="imagen/Design sem nome4.png" alt="logo DNL">
+                    <img src="/imagen/portifolio00.png" alt="logo DNL">
                 </a>
             </div><!--logotipo-->
 
 
             <nav class="menu-desktop">
-                <ul>
+                <ul class="menu-principal">
                     <li><a href="http://127.0.0.1:5500/">&lt;Início&gt;</a></li>
                     <li><a href="http://127.0.0.1:5500/projetos.html">&lt;Projetos&gt;</a></li>
-                    <li><a href="http://127.0.0.1:5500/forma%C3%A7%C3%A3o.html">&lt;Formação&gt;</a></li>
+                    <li><a href="http://127.0.0.1:5500/forma%C3%A7%C3%A3o.html">&lt;Formação&gt;</a>
+                    </li>
                     <li><a href="http://127.0.0.1:5500/experiencia.html">&lt;Experiências&gt;</a></li>
                     <li><a href="http://127.0.0.1:5500/sobre-mim.html">&lt;Sobre mim&gt;</a></li>
 
                 </ul>
+
             </nav>
 
+            <div class="btn-abrir-menu" id="btn-menu"><i class="bi bi-list"></i></div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar"><i class="bi bi-x"></i></div>
+        
+                <nav>
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/">&lt;Início&gt;</a></li>
+                        <li><a href="http://127.0.0.1:5500/projetos.html">&lt;Projetos&gt;</a></li>
+                        <li><a href="http://127.0.0.1:5500/forma%C3%A7%C3%A3o.html">&lt;Formação&gt;</a></li>
+                        <li><a href="http://127.0.0.1:5500/experiencia.html">&lt;Experiências&gt;</a></li>
+                        <li><a href="http://127.0.0.1:5500/sobre-mim.html">&lt;Sobre mim&gt;</a></li>
+        
+                    </ul>
+        
+                </nav>
+    
+            </div>
+
+            <div class="overlay-menu" id="overlay-menu"></div>
 
         </div><!--cabeçalho-->
 
@@ -59,94 +83,89 @@
             </h2>
         </div>
 
-        <div class="cards">
+        <div class="cards efeito-row1">
 
             <div class="wrapper">
-                <div class="container">
-                    <input type="radio" name="slide" id="c1" checked>
-                    <label for="c1" class="card">
-                        <div class="row">
-                            <div class="icon"><i class="bi bi-1-circle-fill"></i></div>
-                            <div class="description">
-                                <h4><i class="bi bi-cart-check"></i> Loja Online</h4>
-                                <p>Crio uma loja online robusta e escalável para impulsionar seu comércio eletrônico.
-                                    Desde a configuração inical até a interação
-                                    de sistemas de pagamentos seguros e uma interface de gerenciamento fácil de usar,
-                                    estou aqui para transformar suas idéias
-                                    em uma plataforma de vendas online eficaz.
-                                </p>
-                            </div>
+
+                <input type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card">
+                    <div class="row ">
+                        <div class="icon"><i class="bi bi-1-circle-fill"></i></div>
+                        <div class="description">
+                            <h4><i class="bi bi-cart-check"></i> Loja Online</h4>
+                            <p>Crio uma loja online robusta e escalável para impulsionar seu comércio eletrônico.
+                                Desde a configuração inical até a interação
+                                de sistemas de pagamentos seguros e uma interface de gerenciamento fácil de usar,
+                                estou aqui para transformar suas idéias
+                                em uma plataforma de vendas online eficaz.
+                            </p>
                         </div>
-                    </label>
+                    </div>
+                </label>
 
-                    <input type="radio" name="slide" id="c2">
-                    <label for="c2" class="card">
-                        <div class="row">
-                            <div class="icon"><i class="bi bi-2-circle-fill"></i></div>
-                            <div class="description">
-                                <h4><i class="bi bi-pip"></i> Identidade Visual e Design</h4>
-                                <p>A identidade visual e a espinha dorçal de sua marca. Trabalho para criar designer
-                                    visualmente cativantes e consistentes que comunicam
-                                    a essência de sua empresa. Desde logotipos e paleta de cores, até materiais de
-                                    marketing, cada elemento é cuidadosamente planejado
-                                    para transmitir a mensagem certa aos seus clientes.</p>
-                            </div>
+                <input type="radio" name="slide" id="c2">
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon"><i class="bi bi-2-circle-fill"></i></div>
+                        <div class="description">
+                            <h4><i class="bi bi-pip"></i> Identidade Visual e Design</h4>
+                            <p>A identidade visual e a espinha dorçal de sua marca. Trabalho para criar designer
+                                visualmente cativantes e consistentes que comunicam
+                                a essência de sua empresa. Desde logotipos e paleta de cores, até materiais de
+                                marketing, cada elemento é cuidadosamente planejado
+                                para transmitir a mensagem certa aos seus clientes.</p>
                         </div>
-                    </label>
+                    </div>
+                </label>
 
-                    <input type="radio" name="slide" id="c3">
-                    <label for="c3" class="card">
-                        <div class="row">
-                            <div class="icon"><i class="bi bi-3-circle-fill"></i></div>
-                            <div class="description">
-                                <h4><i class="bi bi-code-square"></i> Web Site</h4>
-                                <p>Desenvolvo seu website sob medida, capturando a essência de sua marca e fornecendo
-                                    uma presença online impactante e funcional.
-                                    Cada website é cuidadosamente projetado para oferecer uma experiência do usuário
-                                    intuitiva e agradável, enquanto reflete a
-                                    identidade exclusiva do seu negócio.</p>
-                            </div>
+                <input type="radio" name="slide" id="c3">
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon"><i class="bi bi-3-circle-fill"></i></div>
+                        <div class="description">
+                            <h4><i class="bi bi-code-square"></i> Web Site</h4>
+                            <p>Desenvolvo seu website sob medida, capturando a essência de sua marca e fornecendo
+                                uma presença online impactante e funcional.
+                                Cada website é cuidadosamente projetado para oferecer uma experiência do usuário
+                                intuitiva e agradável, enquanto reflete a
+                                identidade exclusiva do seu negócio.</p>
                         </div>
-                    </label>
+                    </div>
+                </label>
 
-                    <input type="radio" name="slide" id="c4">
-                    <label for="c4" class="card">
-                        <div class="row">
-                            <div class="icon"><i class="bi bi-4-circle-fill"></i></div>
-                            <div class="description">
-                                <h4><i class="bi bi-cpu"></i> Inteligência Artificial</h4>
-                                <p>Exploro o poder da inteligência artificial para impulsionar o crescimento do seu
-                                    negócio. Desde a implementação de chatbots para melhorar
-                                    o suporte ao cliente até analises avançadas de dados para insights valioso, estou
-                                    aqui para ajudar a integrar soluções de IA que
-                                    impulsionem sua eficiência e inovação.
+                <input type="radio" name="slide" id="c4">
+                <label for="c4" class="card">
+                    <div class="row">
+                        <div class="icon"><i class="bi bi-4-circle-fill"></i></div>
+                        <div class="description">
+                            <h4><i class="bi bi-cpu"></i> Inteligência Artificial</h4>
+                            <p>Exploro o poder da inteligência artificial para impulsionar o crescimento do seu
+                                negócio. Desde a implementação de chatbots para melhorar
+                                o suporte ao cliente até analises avançadas de dados para insights valioso, estou
+                                aqui para ajudar a integrar soluções de IA que
+                                impulsionem sua eficiência e inovação.
 
-                                </p>
-                            </div>
+                            </p>
                         </div>
-                    </label>
+                    </div>
+                </label>
 
-                    <input type="radio" name="slide" id="c5">
-                    <label for="c5" class="card">
-                        <div class="row">
-                            <div class="icon"><i class="bi bi-5-circle-fill"></i></div>
-                            <div class="description">
-                                <h4><i class="bi bi-robot"></i> Automação</h4>
-                                <p>Otimizo precessos e aumento a produtividade com soluções de automação personalizadas.
-                                    Da automação de marketing ou gerenciamento
-                                    de tarefas, nosso objetivo é simplificar operações, liberando tempo e recurso para
-                                    focar no crescimento dos seu negócio.
-                                </p>
-                            </div>
+                <input type="radio" name="slide" id="c5">
+                <label for="c5" class="card">
+                    <div class="row">
+                        <div class="icon"><i class="bi bi-5-circle-fill"></i></div>
+                        <div class="description">
+                            <h4><i class="bi bi-robot"></i> Automação</h4>
+                            <p>Otimizo precessos e aumento a produtividade com soluções de automação personalizadas.
+                                Da automação de marketing ou gerenciamento
+                                de tarefas, nosso objetivo é simplificar operações, liberando tempo e recurso para
+                                focar no crescimento dos seu negócio.
+                            </p>
                         </div>
-                    </label>
+                    </div>
+                </label>
 
 
-
-
-
-
-                </div>
             </div>
 
         </div>
@@ -175,7 +194,7 @@
                 </div>
 
                 <div class="logo-footer">
-                    <a href="http://127.0.0.1:5500/"><img src="/imagen/Design sem nome4.png" alt=""></a>
+                    <a href="http://127.0.0.1:5500/"><img src="/imagen/111111Design sem nome.png" alt=""></a>
 
                 </div><!--logo-footer-->
 
@@ -184,6 +203,7 @@
 
         </div>
     </footer>
+
 
 
 </body>

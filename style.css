@@ -41,6 +41,24 @@ p {
     font-style: oblique;
 }
 
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1%;
+    background-color: #44AFFF;
+    animation: show-right 1.5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes show-right {
+    100% {
+        width: 0;
+    }
+}
+
 .cabeçalho {
     max-width: 100%;
     /* largura máxima da borda*/
@@ -85,9 +103,10 @@ header a {
 }
 
 .menu-desktop {
+    order: 1;
     background-color: #00000099;
     padding: 5px;
-    border: solid 5px #44AFFF;
+    border: solid 2px #44AFFF;
     box-shadow: 0 0 5px 3px #44AFFF;
     border-radius: 20px;
 }
@@ -105,7 +124,7 @@ header nav ul {
     /*retira os bolinhas da lista ul*/
 }
 
-header nav ul li {
+header nav ul.menu-principal li {
     display: inline-block;
     padding: 0px
         /*encime e embaixo*/
@@ -113,29 +132,42 @@ header nav ul li {
     /* esquerda e direita*/
 }
 
+
+
 /*conteudo página inical*/
+.menu-mobile, .btn-abrir-menu{
+    order: 2;
+    display: none;
+}
+
+
+
 .txt-topo-site {
-    color: rgb(255, 255, 255);
-    text-align: justify;
-    margin-top: 7%;
-    margin-right: 4%;
-    margin-left: 62%;
+    padding: 15px 30px;
+    margin-top: 4%;
+    margin-left: 58%;
+    text-align: center;
 }
 
 .txt-topo-site h1 {
-    font-size: 55px;
+    position: relative;
+    font-size: 50px;
     /*tamanho da fonte*/
     color: #44AFFF;
     line-height: 50px;
     /*espaçamento entre linhas*/
-    text-align: center;
+
+
 }
 
 .txt-topo-site p {
+    position: relative;
     font-size: 22px;
     /* tamaho da fonte*/
     line-height: 25px;
+    color: rgb(255, 255, 255);
     /*espaçamento*/
+    text-align: justify;
 }
 
 .botaocontato button {
@@ -157,7 +189,7 @@ header nav ul li {
 }
 
 .botaocontato {
-    text-align: center;
+
     padding: 50px 50px;
 }
 
@@ -171,23 +203,20 @@ header nav ul li {
     display: inline-block;
 }
 
-.animate {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 1%;
-    background-color: #44AFFF;
-    animation: show-right 1.5s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+.efeito-decoração,
+.efeito-txt,
+.efeito-img,
+.efeito-botaocontato,
+.efeito-timeline1,
+.efeito-timeline4,
+.efeito-wrapper,
+.efeito-slider,
+.efeito-contato,
+.efeito-form1 {
+    visibility: hidden;
 }
 
-@keyframes show-right {
-    100% {
-        width: 0;
-    }
-}
+
 
 /*quando o mouse passa sobre o botão*/
 .botaocontato button:hover {
@@ -198,6 +227,10 @@ header nav ul li {
 }
 
 /* página contatos */
+.formulario {
+    overflow: hidden;
+}
+
 form {
     padding: 30px 4%;
     max-width: 700px;
@@ -206,6 +239,7 @@ form {
     justify-content: center;
     flex-direction: column;
     gap: 15px;
+    text-align: center;
 }
 
 input:-webkit-autofill {
@@ -230,13 +264,17 @@ form textarea::placeholder {
     color: #ffffff9e;
     font-size: 18px;
     font-family: "Oxanium", sans-serif;
-    ;
 }
 
 form textarea {
     resize: vertical;
     /*não redimencionar*/
     height: 150px;
+}
+
+.line-contato {
+    text-align: center;
+    margin-top: 20px;
 }
 
 .btn-enviar {
@@ -270,42 +308,43 @@ form textarea {
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    overflow: hidden;
+
 }
 
 .container {
-    height: 490px;
-    display: flex;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: center;
+    position: relative;
+
 }
 
 .card {
     width: 100px;
+    height: 500px;
     /*largura fechado*/
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
     border-radius: 32px;
     margin: 0px 10px;
-    display: flex;
     transition: .9s cubic-bezier(.28, -0.03, 0, .99);
     box-shadow: 0 0 5px 3px #44AFFF
 }
 
-.card .row {
+.row {
     color: #44AFFF;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 
-.card .row .icon {
+.row .icon {
     font-size: 40px;
     color: #44AFFF;
     padding: 10px 30px;
 }
 
-.card .row .description {
-    padding: 0px 30px;
+.row .description {
+    padding: 1px 30px;
     overflow: hidden;
     opacity: 0;
     transform: translateY(30px);
@@ -313,9 +352,7 @@ form textarea {
     transition: all .3s ease;
 }
 
-.description {
-    text-align: left;
-}
+
 
 .description p {
     letter-spacing: 0.5px;
@@ -366,10 +403,7 @@ input:checked+label .description {
     background: #00000099;
 }
 
-.interface {
-    display: flex;
-    margin-top: 2%;
-}
+
 
 /* rodapé */
 footer {
@@ -382,9 +416,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
-footer button {
+.btn-social button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -396,12 +431,13 @@ footer button {
     transition: .2s;
 }
 
-footer button:hover {
-    transform: scale(1.05);
+.btn-social button:hover {
+    transform: scale(1.09);
     box-shadow: 0 0 5px 3px #44AFFF;
 }
 
 footer img:hover {
+    transition: .2s;
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -410,12 +446,17 @@ footer img:hover {
 .sobre {
     display: flex;
     align-items: center;
-    padding: 2% 4%;
+    padding: 2% 2%;
+    overflow: hidden;
 }
 
 .imagen img {
-    width: 50px;
-    padding: 0 0px;
+    width: 600px;
+    margin-right: 30px;
+    border-radius: 25%;
+    box-shadow: 0 0 5px 3px #44AFFF;
+
+
 }
 
 .texto {
@@ -442,23 +483,21 @@ footer img:hover {
 /*projetos*/
 .slider {
     position: relative;
-    width: 100%;
-    height: 520px;
+    height: 560px;
     overflow: hidden;
+    margin-bottom: 2%;
 }
 
 .item {
     color: #ffffff;
     margin-top: 2%;
     position: absolute;
-    width: 600px;
-    height: 450px;
+    width: 44%;
     text-align: center;
     background-color: #00000099;
     border-radius: 10px;
-    padding: 10px;
     transition: 0.5s;
-    left: calc(50% - 300px);
+    left: calc(50% - 22%);
     top: 0;
     border: solid 3px #44AFFF;
     box-shadow: 0 0 5px 3px #44AFFF;
@@ -469,6 +508,7 @@ footer img:hover {
 }
 
 .item button {
+    margin-bottom: 10px;
     margin-top: 5px;
     padding: 8px 18px;
     /* distancia da borda superior e inferior,  altura*/
@@ -506,13 +546,13 @@ footer img:hover {
     font-size: xxx-large;
     font-family: monospace;
     font-weight: bold;
-    left: 350px;
+    left: 13%;
     transition: .2s;
 }
 
 #next {
     left: unset;
-    right: 350px;
+    right: 13%;
 }
 
 #next:hover,
@@ -523,9 +563,9 @@ footer img:hover {
 }
 
 .template img {
-    width: 500px;
+    width: 90%;
     border-radius: 30px;
-    padding: 10px 10px;
+    padding: 10px 0px;
 }
 
 .template {
@@ -534,9 +574,8 @@ footer img:hover {
 
 /*janela modal*/
 .janela-modal {
+    margin-top: 15%;
     padding: 20px;
-    min-width: 100;
-    min-height: 100vh;
     text-align: center;
     position: absolute;
     top: 0;
@@ -554,8 +593,6 @@ footer img:hover {
 
 .modal {
     width: 80%;
-    min-width: 450px;
-    min-height: 400px;
     background-color: #ffffff85;
     backdrop-filter: blur(10px);
     padding: 30px;
@@ -600,6 +637,7 @@ footer img:hover {
 
 /*FORMAÇÃO*/
 .timeline {
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -634,7 +672,7 @@ footer img:hover {
     border-radius: 50%;
 }
 
-.timeline-content .content {
+.content {
     padding: 15px 2%;
     box-shadow: 0 0 5px 3px #44AFFF;
     background-color: #00000099;
@@ -642,41 +680,163 @@ footer img:hover {
     margin-bottom: 32px;
 }
 
-.timeline-content .content .year {
+.content .year {
     font-size: 26px;
     color: #ffffff;
 }
 
-.timeline-content .content .year i {
+.content .year i {
     margin-right: 8px;
 }
 
-.timeline-content .content h3 {
+.content h3 {
     font-size: 20px;
     margin: 8px 0;
     color: #ffffffee;
 }
 
-.timeline-content .content p {
+.content p {
     font-size: 18px;
     color: #44AFFF;
 }
 
 
+/*responsivo*/
+@media screen and (max-width: 1050px) {
+
+    /*cabeçalho*/
+    .menu-desktop {
+        display: none;
+    }
+    
+
+    /*inicial*/
+    .txt-topo-site {
+        padding: 0px 8px;
+        margin-top: 2%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    /*projetos*/
+    .slider {
+        height: 400px;
+        margin-top: 2%;
+    }
+
+    /*experiencia*/
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .wrapper.row{
+        margin-bottom: 20px;
+    }
+
+    .container {
+        flex-wrap: nowrap;
+        justify-content: center;
+        position: relative;
+
+    }
+
+    .card {
+        width: 100px;
+        height: 600px;
+        margin-bottom: 20px;
+    }
 
 
+    input:checked+label {
+        width: 370px;
+    }
+
+    /*sobre-mim*/
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .imagen img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
 
+    /* estilo menu mobile */
+
+.overlay-menu{
+    background-color: #00000099;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+    
+}
 
 
+.btn-abrir-menu i{
+    color: #44AFFF;
+    font-size: 35px;
+    background-color:#00000099;
+    border-radius: 49%;
+    box-shadow: 0 0 5px 3px #44AFFF;
+    cursor: pointer;
+}
 
+.menu-mobile{
+    background-color: #000000;
+    height: 100vh;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
 
+.menu-mobile.abrir-menu{
+    width: 250px;
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
 
+.menu-mobile .btn-fechar{
+    padding: 25px 5%;
+}
 
+.menu-mobile .btn-fechar i{
+    color: #44AFFF;
+    font-size: 35px;
+    cursor: pointer;
 
+}
 
+.menu-mobile nav ul{
+    text-align: right;
+}
 
+.menu-mobile nav ul li a{
+    font-size: 25px;
+    padding: 20px 8%;
+    
+}
 
+.btn-abrir-menu{
+    display: block;
+}
 
+.menu-mobile, .btn-abrir-menu{
+    display: inline-block;
+}
 
-/*teste*/
+}
